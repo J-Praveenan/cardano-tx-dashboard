@@ -1,37 +1,53 @@
-# Starter Next.js TypeScript
+# 🚀 Cardano Transaction Dashboard (AdaLedger)
 
-Start a new project on Next.js. This starter template consists of a connect wallet button and wallet integration.
-      
-## Getting Started
+A modern **Cardano wallet dashboard** built with **Next.js, React, and Mesh SDK**.  
+This app allows users to connect their wallet, view balance, and send ADA transactions securely.
 
-Start project locally using CLI:
+---
+
+## 🌟 Features
+
+- 🔐 Connect Cardano wallets (Lace, Nami, Eternl)  
+- 💰 View ADA balance with USD conversion  
+- 🪪 Display wallet address with copy functionality  
+- 💸 Send ADA transactions  
+- 📜 Transaction history with details  
+- 📱 Responsive UI (Tailwind CSS)  
+
+---
+
+## 🛠 Tech Stack
+
+- Next.js, React, TypeScript  
+- Mesh SDK  
+- Cardano Blockchain  
+- Blockfrost API  
+- Tailwind CSS  
+
+---
+
+## ⚙️ Setup
 
 ```bash
-npx meshjs app-name
+git clone https://github.com/J-Praveenan/cardano-tx-dashboard.git
+cd cardano-tx-dashboard
+npm install
+npm run dev
+
 ```
 
-## Learn More
+## 🔗 Wallet Extensions (Download)
 
-### [APIs](https://meshjs.dev/apis)
+Install any of the following:
 
-From wallet integrations to transaction builders, Mesh makes Web3 development easy with reliable, scalable, and well-engineered APIs & developer tools.
+- Lace → https://www.lace.io/  
+- Nami → https://namiwallet.io/  
+- Eternl → https://eternl.io/ 
 
-### [Guides](https://meshjs.dev/guides)
+---
 
-Whether you are new to web development or a seasoned blockchain full-stack developer, these guides will help you get started.
+## 🌐 Run Locally
 
-### [Smart Contracts](https://meshjs.dev/smart-contracts)
+👉 http://localhost:3000  
 
-Open-source smart contracts, complete with documentation, live demos, and end-to-end source code.
-
-### [React components and hooks](https://meshjs.dev/react)
-
-Frontend components for wallet connections, and useful React hooks to getting wallet states - Mesh provides everything you need to bring your Web3 user interface to life.
-
-## Connect with us
-
-Give a star on our [GitHub](https://meshjs.dev/go/github) to stay up to date with our latest developments.
-
-Follow us on [Twitter](https://meshjs.dev/go/twitter) for updates.
-
-Join our [Discord](https://meshjs.dev/go/discord) for any questions and suggestions.
+---

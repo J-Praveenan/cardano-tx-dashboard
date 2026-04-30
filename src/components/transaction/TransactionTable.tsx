@@ -18,7 +18,7 @@ export default function TransactionTable({
   return (
     <div className="bg-white rounded-xl shadow overflow-x-auto">
       <table className="w-full text-sm text-left">
-        <thead className="bg-gray-100 text-gray-600 uppercase text-xs">
+        <thead className="bg-gray-300 text-gray-600 uppercase text-xs">
           <tr>
             <th className="p-4">Sender</th>
             <th className="p-4">Receiver</th>
