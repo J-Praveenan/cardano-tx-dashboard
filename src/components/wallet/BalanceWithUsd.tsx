@@ -1,4 +1,4 @@
-import { useLovelace } from "@meshsdk/react";
+import { useLovelace, useWallet } from "@meshsdk/react";
 import { useEffect, useState } from "react";
 
 export default function BalanceWithUsd() {
@@ -7,6 +7,7 @@ export default function BalanceWithUsd() {
   const [adaPrice, setAdaPrice] = useState<number | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
+  const {connected} = useWallet();
 
   
   useEffect(() => {
@@ -46,15 +47,21 @@ export default function BalanceWithUsd() {
     <div className="bg-white p-6 rounded-xl shadow">
 
       <h2 className="text-gray-500 mb-2">Balance</h2>
-      <p className="text-3xl font-bold text-gray-800">
+
+      {
+        connected && 
+        <p className="text-3xl font-bold text-gray-800">
         {ada.toFixed(2)} ADA
       </p>
+      }
+      
       
       {error ? (
         <p className="text-red-400 text-sm mt-1">
           Failed to fetch price
         </p>
       ) : usd !== null ? (
+        connected && 
         <p className="text-gray-500 mt-1">
           ≈ ${usd.toFixed(2)} USD
         </p>
