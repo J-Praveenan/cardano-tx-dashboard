@@ -4,6 +4,8 @@ import WalletHeader from "@/components/wallet/WalletHeader";
 import BalanceWithUsd from "@/components/wallet/BalanceWithUsd";
 import AddressCard from "@/components/wallet/AddressCard";
 import WalletInfo from "@/components/wallet/WalletInfo";
+import TransactionTable from "@/components/transaction/TransactionTable";
+import TransactionDashboard from "@/components/transaction/TransactionDashboard";
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
         <AddressCard/>
         <WalletInfo/>
       </div>
+
+      <TransactionDashboard/>
     </div>
   );
 }
