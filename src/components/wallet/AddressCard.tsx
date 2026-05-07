@@ -1,9 +1,10 @@
-import { useAddress } from "@meshsdk/react";
+import { useAddress, useWallet } from "@meshsdk/react";
 import { useState } from "react";
 
 export default function AddressCard() {
   const address = useAddress();
   const [copied, setCopied] = useState(false);
+  const {connected} = useWallet();
 
   const shortAddress = address
     ? `${address.slice(0, 12)}...${address.slice(-6)}`
@@ -28,7 +29,7 @@ export default function AddressCard() {
       <h2 className="text-gray-500 mb-2">Wallet Address</h2>
 
       <p className="font-mono text-gray-800 break-all">
-        {shortAddress}
+        {connected ? shortAddress : "No address"}
       </p>
 
       <div className="flex items-center justify-between mt-4">
