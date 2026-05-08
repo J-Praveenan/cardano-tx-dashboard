@@ -40,7 +40,7 @@ export default function WalletHeader() {
         </span>
 
         
-        <CardanoWallet isDark={true} persist={false}/>
+        <CardanoWallet isDark={true} persist={true}/>
 
         
         {connected && (
